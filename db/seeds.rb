@@ -1,1 +1,1 @@
-User.create(username: 'jack', email: 'jacksonmorgan@hey.com', password: '1111', password_confirmation: '1111')
+User.create(username: 'jack', email: 'jacksonmorgan@hey.com', password: '1111', password_confirmation: '1111', availableCash: 100000)
