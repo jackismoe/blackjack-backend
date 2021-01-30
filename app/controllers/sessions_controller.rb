@@ -7,4 +7,9 @@ class SessionsController < ApplicationController
       render json: user
     end
   end
+
+  def destroy
+    session[:user_id] = 0
+    render json: session
+  end
 end
