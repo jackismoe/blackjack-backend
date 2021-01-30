@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :cards
   resources :dealers
   resources :sessions, only: [:create]
   resources :users
