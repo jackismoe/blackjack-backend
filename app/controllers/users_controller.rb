@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
   def create
-    user = User.create(username: params[:player][:name], password: params[:player][:password])
+    user = User.create(username: params[:player][:name], password: params[:player][:password], wins: 0, losses: 0)
     session[:user_id] = user.id
-    render json: session
+    sessionStorage = {username: user.username, userId: session[:user_id]}
+    render json: sessionStorage
   end
 
   def show
