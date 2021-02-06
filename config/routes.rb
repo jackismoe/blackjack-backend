@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get '/'
   resources :cards
   resources :dealers
   resources :sessions, only: [:create, :destroy]
